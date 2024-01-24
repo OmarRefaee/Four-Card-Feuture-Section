@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+/*
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+*/
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: grey;
+  font-weight: bold;
+  width: 100%;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+footer .attribution a:hover {
+  color: rgba(50, 50, 50, 0.5);
+}
+
+.cards {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .cards {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    scale: 1.1;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cards {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    scale: 0.9;
+  }
+}
+.cards .card {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 10px 20px #dee5f1;
+  height: 222px;
+  width: 311px;
+  margin-bottom: 27.5px;
+  padding: 23.5px 27px;
+  text-align: left;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .cards .card {
+    padding: 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cards .card {
+    padding: 30px;
+  }
+}
+.cards .card h2 {
+  margin: 0;
+  font-size: 20px;
+  color: hsl(234, 12%, 34%);
+}
+@media (min-width: 1200px) {
+  .cards .card h2 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cards .card h2 {
+    font-size: 18px;
+  }
+}
+.cards .card p {
+  color: hsl(229, 6%, 66%);
+  line-height: 1.7;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 1px;
+}
+@media (min-width: 1200px) {
+  .cards .card p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cards .card p {
+    font-size: 12px;
+  }
+}
+.cards .card img {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(-50%);
+  right: 27px;
+  bottom: 27px;
+  transform: none;
+  width: 57px;
+  aspect-ratio: 1;
+}
+.cards .supervisorCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background-color: hsl(180, 62%, 55%);
+}
+.cards .teamBuilderCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background-color: hsl(0, 78%, 62%);
+}
+.cards .karmaCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background-color: hsl(34, 97%, 64%);
+}
+.cards .calcCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 4px;
+  background-color: hsl(212, 86%, 64%);
+}
+
+main {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  main {
+    padding: 70px 0 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main {
+    padding: 70px 0 0;
+  }
+}
+main h1 {
+  font-size: 24px;
+  color: hsl(234, 12%, 34%);
+}
+@media (min-width: 1200px) {
+  main h1 {
+    font-size: 35px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main h1 {
+    font-size: 35px;
+  }
+}
+main h1 span {
+  font-weight: 200;
+}
+main > .description {
+  font-size: 15px;
+  color: hsl(229, 6%, 66%);
+  max-width: 370px;
+  line-height: 1.6;
+  padding: 0 30px;
+  margin-bottom: 75px;
+}
+@media (min-width: 1200px) {
+  main > .description {
+    padding: 0;
+    max-width: 520px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  main > .description {
+    padding: 0;
+    max-width: 520px;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    @include flex(column, normal, center);
+    text-align: center;
+    background-color: $veryLightGray;
+}

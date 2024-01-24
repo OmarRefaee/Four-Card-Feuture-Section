@@ -1,0 +1,39 @@
+@use "./SCSS/Helpers/global" as *;
+@use "./SCSS/Helpers/variables" as *;
+@use "./SCSS/Helpers/mixins" as *;
+@use "./SCSS/Layout/footer" as *;
+@use "./SCSS/Layout/cards" as *;
+
+main {
+    padding: 70px 0;
+    @include flex(column, center, center);
+
+    @include breakpoints(large, medium) {
+        padding: 70px 0 0;
+    }
+
+    h1 {
+        @include breakpoints(large, medium) {
+            font-size: 35px;
+        }
+        font-size: 24px;
+        color: $veryDarkBlue;
+        span {
+            font-weight: 200;
+        }
+    }
+
+    & > .description {
+        @include breakpoints(large, medium) {
+            padding: 0;
+            max-width: 520px;
+            margin-top: 0;
+        }
+        font-size: 15px;
+        color: $grayishBlue;
+        max-width: 370px;
+        line-height: 1.6;
+        padding: 0 30px;
+        margin-bottom: 75px;
+    }
+}
